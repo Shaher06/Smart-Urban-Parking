@@ -1,0 +1,249 @@
+/* Smart Urban Parking – Custom Styles */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App shell for sticky footer */
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-main {
+    flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: calc(100vh - 56px);
+    position: sticky;
+    top: 56px;
+}
+
+.sidebar .nav-link {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Navbar brand */
+.navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+/* Tables */
+.table th {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* Badges */
+.badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 50px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Flash messages */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Progress bars */
+.progress {
+    border-radius: 50px;
+}
+
+/* Form controls */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1.5px solid #dee2e6;
+    font-size: 0.92rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.15);
+}
+
+/* Stats cards */
+.card.text-center p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* QR code placeholder */
+.bi-qr-code {
+    color: #212529;
+}
+
+/* Footer */
+footer {
+    font-size: 0.85rem;
+}
+
+/* Landing icons */
+.icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Public landing page styling (scoped) ─────────────────────────────────── */
+.public-landing {
+    scroll-behavior: smooth;
+}
+
+.public-landing section[id] {
+    scroll-margin-top: 84px; /* offset for sticky navbar */
+}
+
+.public-landing .landing-nav {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.public-landing .landing-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+    background: rgba(13,110,253,0.10);
+}
+
+.public-landing .landing-hero {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.public-landing .landing-hero .container {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+}
+
+.public-landing .landing-section-title {
+    letter-spacing: -0.02em;
+}
+
+.public-landing .landing-section-subtitle {
+    max-width: 56ch;
+}
+
+.public-landing .landing-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(13,110,253,0.95);
+    background: rgba(13,110,253,0.08);
+    border: 1px solid rgba(13,110,253,0.18);
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.public-landing .landing-panel {
+    display: grid;
+    gap: 12px;
+}
+
+.public-landing .landing-panel-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.public-landing .landing-step {
+    border-radius: 14px;
+}
+
+.public-landing .landing-step-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13,110,253,0.10);
+    color: #0d6efd;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.public-landing .feature-chip {
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.06);
+    padding: 14px 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    font-weight: 600;
+    color: #1f2a44;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.public-landing .landing-footer {
+    background: #0b1220;
+    color: #fff;
+}
+
+/* Landing navbar polish (light) */
+.public-landing .navbar-light .navbar-nav .nav-link {
+    color: rgba(10, 20, 40, 0.72);
+    font-weight: 500;
+}
+.public-landing .navbar-light .navbar-nav .nav-link:hover,
+.public-landing .navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(10, 20, 40, 0.95);
+}
+.public-landing .navbar-light .navbar-brand {
+    color: rgba(10, 20, 40, 0.95);
+}
+.public-landing .navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0.12);
+}
+
+.public-landing .divider-soft {
+    border-top: 1px solid rgba(0,0,0,0.06);
+}

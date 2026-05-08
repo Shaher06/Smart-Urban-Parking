@@ -1,0 +1,9 @@
+/src/public/uploads/evidence/*
+/src/public/uploads/owner_documents/*
+/src/public/uploads/profile_images/*
+/src/public/uploads/reports/*
+!.gitkeep
+*.log
+.DS_Store
+Thumbs.db
+/vendor/
