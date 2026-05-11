@@ -14,6 +14,7 @@ if (!defined('BASE_URL')) {
     define('BASE_URL', '/Smart_Parking/src/public');
 }
 
+
 // ── 2. Load core config and infrastructure ────────────────────────────────────
 require_once BASE_PATH . '/config/app.php';       // Config Singleton + constants (PATTERN: Singleton)
 require_once BASE_PATH . '/config/constants.php'; // Status/role/payment constants (guarded)

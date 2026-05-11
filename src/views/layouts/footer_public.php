@@ -24,7 +24,7 @@
             <hr class="border-white border-opacity-10 my-3">
             <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 small text-white-50">
                 <div>&copy; <?= date('Y') ?> <?= APP_NAME ?>. All rights reserved.</div>
-                <div>Built with PHP / MySQL / Bootstrap.</div>
+                <div></div>
             </div>
         </div>
     </footer>
