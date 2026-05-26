@@ -1,11 +1,5 @@
 <?php
-/**
- * PARKING SPOT MODEL
- *
- * FIX: Added missing getNearbyAlternatives() method.
- *      Called by BookingService::book() when a spot has no available slots.
- *      SRS Function: Nearby Alternative Suggestion.
- */
+
 
 require_once BASE_PATH . '/core/Model.php';
 

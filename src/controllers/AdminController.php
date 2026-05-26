@@ -1,10 +1,5 @@
 <?php
-/**
- * ADMIN CONTROLLER — Refactored
- *
- * PATTERN: ServiceFactory used throughout (Factory Pattern)
- * All service instantiation goes through ServiceFactory::make()
- */
+
 
 require_once BASE_PATH . '/core/Controller.php';
 require_once BASE_PATH . '/core/ServiceFactory.php';

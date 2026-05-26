@@ -1,10 +1,5 @@
 <?php
-/**
- * RESERVATION CONTROLLER — Refactored
- *
- * PATTERN: ServiceFactory for BookingService and PaymentGatewayService
- * Payment lifecycle: charge (escrow) on book, release on checkout.
- */
+
 
 require_once BASE_PATH . '/core/Controller.php';
 require_once BASE_PATH . '/core/ServiceFactory.php';

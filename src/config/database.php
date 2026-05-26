@@ -3,16 +3,7 @@
  * DATABASE CONNECTION — SINGLETON PATTERN
  *
  * PATTERN: Singleton
- * WHY:     A database connection is expensive to create. Opening multiple
- *          connections wastes server resources and can cause state inconsistency.
- *          Singleton guarantees exactly ONE PDO instance per request lifecycle.
- *
- * HOW IT WORKS:
- *   Database::getInstance() always returns the same PDO object.
- *   First call creates it. Every subsequent call returns the cached instance.
- *
- * FIX: Added if (!class_exists('Database')) guard to prevent redefinition
- *      errors if database.php is included more than once.
+
  */
 
 if (!class_exists('Database')) {

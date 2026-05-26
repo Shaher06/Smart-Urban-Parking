@@ -2,10 +2,7 @@
 
 require_once BASE_PATH . '/core/Model.php';
 
-/**
- * Report Model — provides analytical queries across multiple tables.
- * Does NOT map to a single table (queries payments, reservations, parking_spots).
- */
+
 class Report extends Model
 {
     // No single $table — this model aggregates across tables.

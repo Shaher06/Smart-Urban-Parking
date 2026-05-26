@@ -6,17 +6,7 @@ class Payout extends Model
 {
     protected string $table = 'payouts';
 
-    /**
-     * Calculate marketplace available balance for an owner (net).
-     *
-     * Available Net =
-     *   Completed Gross Earnings * (1 - COMMISSION_RATE)
-     *   - SUM(net_amount) of payouts in statuses that reserve/consume earnings
-     *     (pending/processing/paid)
-     *
-     * NOTE: This method can be used inside a DB transaction with row locks
-     * (see requestAvailablePayout()) to make it safe against rapid double-submits.
-     */
+  
     public function getAvailableNet(int $ownerId): float
     {
         // Completed gross earnings for this owner (released funds only)

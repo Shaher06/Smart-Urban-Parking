@@ -2,14 +2,7 @@
 /**
  * PEAK HOUR PRICING STRATEGY
  * PATTERN: Strategy (Concrete implementation of PricingStrategy)
- *
- * Applies 1.5× multiplier during peak hours:
- *   Morning peak: 07:00 – 09:00
- *   Evening peak: 17:00 – 19:00
- *
- * WHY A SEPARATE CLASS?
- *   If peak-hour logic changes (e.g. 1.75× or different hours),
- *   only THIS file changes. No other code is touched.
+
  */
 
 require_once BASE_PATH . '/interfaces/PricingStrategy.php';

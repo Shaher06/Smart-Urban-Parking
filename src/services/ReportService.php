@@ -1,12 +1,6 @@
 <?php
 
-/**
- * ReportService — generates analytical reports.
- *
- * NOTE: Per the class diagram, PaymentService is the ONLY interface.
- * ReportService does NOT implement a separate ReportGenerator interface;
- * the broken require for interfaces/ReportGenerator.php is removed.
- */
+
 
 require_once BASE_PATH . '/models/Report.php';
 

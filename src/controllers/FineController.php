@@ -1,10 +1,5 @@
 <?php
-/**
- * FINE CONTROLLER — Refactored
- *
- * PATTERN: ServiceFactory used for FineService (Factory Pattern)
- * Business logic fully delegated to FineService (clean MVC separation)
- */
+
 
 require_once BASE_PATH . '/core/Controller.php';
 require_once BASE_PATH . '/core/ServiceFactory.php';

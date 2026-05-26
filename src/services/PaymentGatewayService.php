@@ -1,19 +1,5 @@
 <?php
-/**
- * PAYMENT GATEWAY SERVICE — Refactored
- *
- * PATTERN: Strategy (implements PaymentService interface)
- * PATTERN: Uses Singleton Database via Database::getInstance()
- *
- * Payment Lifecycle (fixed):
- *   1. charge()  → creates payment with status 'escrow' (funds locked)
- *   2. release() → moves payment from 'escrow' to 'completed' (after checkout)
- *   3. refund()  → marks payment as 'refunded', logs it
- *   4. fail()    → marks payment as 'failed'
- *
- * FIX: Previously the lifecycle was unclear — escrow and completed were mixed.
- *      Now: pending → escrow → completed, or pending → failed, or completed → refunded.
- */
+
 
 require_once BASE_PATH . '/interfaces/PaymentService.php';
 require_once BASE_PATH . '/models/Payment.php';

@@ -1,12 +1,7 @@
 <?php
 /**
  * APPLICATION CONSTANTS
- *
- * All constants use if (!defined(...)) guards to prevent
- * redefinition errors if this file is included more than once.
- *
- * FIX: Added guards on every define — previously missing, causing
- *      "Constant already defined" fatal errors on double-include.
+
  */
 
 // ── Roles ─────────────────────────────────────────────────────────────────────

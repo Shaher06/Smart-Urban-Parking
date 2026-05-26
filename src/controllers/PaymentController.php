@@ -1,20 +1,5 @@
 <?php
-/**
- * PAYMENT CONTROLLER
- *
- * PATTERN: ServiceFactory used for PaymentGatewayService (Factory Pattern).
- *
- * FIX: Removed direct `new PaymentGatewayService()` and `new EscrowService()`.
- *      All service instantiation goes through ServiceFactory::make() to maintain
- *      consistency with the Factory Pattern used across the whole project.
- *
- * FIX: escrow() now correctly calls $paymentModel->getEscrowPayments()
- *      instead of getByUser() — shows only escrow-locked payments.
- *
- * Payment Lifecycle:
- *   pending → escrow → completed → (optionally) refunded
- *   pending → failed
- */
+
 
 require_once BASE_PATH . '/core/Controller.php';
 require_once BASE_PATH . '/core/ServiceFactory.php';

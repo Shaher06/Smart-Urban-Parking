@@ -4,10 +4,7 @@ require_once BASE_PATH . '/core/Controller.php';
 
 class HomeController extends Controller
 {
-    /**
-     * Public landing page (no login required).
-     * Logged-in users are redirected to their dashboard.
-     */
+  
     public function landing(): void
     {
         if (is_logged_in()) {

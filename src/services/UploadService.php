@@ -1,13 +1,5 @@
 <?php
-/**
- * UPLOAD SERVICE — Refactored
- *
- * Fixes:
- * 1. Profile image upload now correctly saves, moves, and returns path.
- * 2. Path stored in DB via UserModel — no more broken links.
- * 3. All upload methods return the relative path OR false on failure.
- * 4. Error messages logged via error_log() for debugging.
- */
+
 
 require_once BASE_PATH . '/helpers/upload_helper.php';
 require_once BASE_PATH . '/models/FileUpload.php';
@@ -103,10 +95,7 @@ class UploadService
 
     // ── Private helpers ───────────────────────────────────────────────────────
 
-    /**
-     * Validate file before moving.
-     * Returns error message string, or empty string if valid.
-     */
+   
     private function validateFile(array $file, string $category): string
     {
         if (!isset($file['tmp_name']) || $file['error'] !== UPLOAD_ERR_OK) {

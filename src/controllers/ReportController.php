@@ -1,14 +1,5 @@
 <?php
-/**
- * REPORT CONTROLLER — Refactored
- *
- * Added:
- * - PDF report export (printable HTML)
- * - Occupancy report
- * - Multi-currency revenue display
- *
- * PATTERN: ServiceFactory for all services
- */
+
 
 require_once BASE_PATH . '/core/Controller.php';
 require_once BASE_PATH . '/core/ServiceFactory.php';

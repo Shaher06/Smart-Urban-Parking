@@ -1,18 +1,5 @@
 <?php
-/**
- * PDF REPORT SERVICE
- *
- * SRS Function: PDF Report Generation (Function #35)
- *
- * Generates printable HTML pages formatted for browser's "Print to PDF".
- * No external libraries required — pure PHP + browser print CSS.
- * For production: integrate mPDF or TCPDF for server-side PDF generation.
- *
- * PATTERN: Used by ServiceFactory::make('pdf') — Factory Pattern.
- *
- * FIX: Class is now fully self-contained. Previously had missing method
- *      references and no export functionality.
- */
+
 
 class PdfReportService
 {

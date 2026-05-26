@@ -1,18 +1,5 @@
 <?php
-/**
- * PRICING CONTEXT — STRATEGY PATTERN
- *
- * The Context holds a reference to a PricingStrategy and delegates
- * the calculate() call to it.
- *
- * USAGE:
- *   $ctx = new PricingContext(new PeakHourPricingStrategy());
- *   $price = $ctx->calculate(5.00, $start, $end);
- *
- * WHY A CONTEXT CLASS?
- *   Keeps the "which strategy" decision in one place.
- *   BookingService asks PricingContext — it doesn't pick strategies itself.
- */
+
 
 require_once BASE_PATH . '/interfaces/PricingStrategy.php';
 require_once BASE_PATH . '/services/pricing/NormalPricingStrategy.php';

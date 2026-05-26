@@ -1,21 +1,8 @@
 <?php
 /**
- * FINE SERVICE
- *
+
  * PATTERN: Used by ServiceFactory::make('fine') — Factory Pattern.
- * PATTERN: Database::getInstance() — Singleton Pattern.
- *
- * Fine Lifecycle:
- *   issued (unpaid) → paid | appealed | waived
- *
- * FIX: getFineStats() now delegates to Fine::getStats() (single responsibility).
- *      Previously called Database::getInstance() directly and ran raw queries
- *      inline — that caused "Call to undefined method Fine::getStats()" because
- *      AdminController was calling $fineService->getFineStats() which was
- *      at line 271 in the old file, trying to call $this->fineModel->getStats()
- *      which didn't exist yet. Now it does — both sides are fixed.
- *
- * FIX: checkAndBlacklist() passes null safely to AuditLog::log() (already accepts null).
+
  */
 
 require_once BASE_PATH . '/models/Fine.php';

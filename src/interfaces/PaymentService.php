@@ -2,8 +2,6 @@
 
 /**
  * PaymentService Interface
- *
- * The ONLY interface in the class diagram.
  * Implemented by: PaymentGatewayService
  */
 interface PaymentService

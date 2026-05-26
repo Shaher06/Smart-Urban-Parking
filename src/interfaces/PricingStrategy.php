@@ -1,23 +1,5 @@
 <?php
-/**
- * PRICING STRATEGY INTERFACE — STRATEGY PATTERN
- *
- * WHY STRATEGY PATTERN FOR PRICING?
- *   Different pricing rules apply in different situations:
- *   - Normal hours: base rate
- *   - Peak hours (7-9am, 5-7pm): 1.5× rate
- *   - Event zones: 2× rate
- *   - Subscription users: fixed rate
- *
- *   Instead of one giant if/else block, each strategy is its own class.
- *   The PricingContext selects the right strategy at runtime.
- *
- * HOW IT WORKS:
- *   1. PricingContext holds a PricingStrategy.
- *   2. BookingService calls $context->calculate() without knowing which strategy runs.
- *   3. To add a new pricing rule: create a new class implementing PricingStrategy.
- *      Zero changes needed in BookingService.
- */
+
 interface PricingStrategy
 {
     /**

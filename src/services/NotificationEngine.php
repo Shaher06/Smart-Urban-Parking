@@ -1,12 +1,6 @@
 <?php
 
-/**
- * NotificationEngine — internal notification dispatcher.
- *
- * NOTE: Per the class diagram, PaymentService is the ONLY interface.
- * NotificationEngine does NOT implement a separate interface; the
- * broken require for interfaces/NotificationService.php is removed.
- */
+
 
 require_once BASE_PATH . '/models/Notification.php';
 

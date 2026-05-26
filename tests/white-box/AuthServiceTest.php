@@ -1,9 +1,5 @@
 <?php
-/**
- * AuthService White-Box Tests
- * Run manually or integrate with a PHP test runner.
- * Tests cover internal logic branches of AuthService.
- */
+
 
 define('BASE_PATH', dirname(__DIR__, 2) . '/src');
 require_once BASE_PATH . '/config/app.php';

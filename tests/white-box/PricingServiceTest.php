@@ -1,7 +1,5 @@
 <?php
-/**
- * PricingService — market suggestion and commission (no database).
- */
+
 define('BASE_PATH', dirname(__DIR__, 2) . '/src');
 require_once BASE_PATH . '/config/app.php';
 require_once BASE_PATH . '/services/PricingService.php';

@@ -1,11 +1,5 @@
 <?php
-/**
- * NAVIGATION SERVICE — Refactored
- *
- * SRS Functions:
- * - Navigation Bridge
- * - Nearby Alternative Suggestion
- */
+
 
 class NavigationService
 {

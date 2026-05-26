@@ -1,7 +1,5 @@
 <?php
-/**
- * PaymentGatewayService White-Box Tests
- */
+
 
 define('BASE_PATH', dirname(__DIR__, 2) . '/src');
 require_once BASE_PATH . '/config/app.php';

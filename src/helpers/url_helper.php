@@ -1,19 +1,5 @@
 <?php
-/**
- * URL HELPERS
- *
- * FIX: upload_url() now correctly maps the relative stored path to
- *      a browser-accessible URL under BASE_URL/uploads/.
- *
- *      The physical path is:  UPLOAD_PATH/{subdir}/{file}
- *      e.g.  /var/www/Smart_Parking/src/public/uploads/profile_images/file_abc.jpg
- *
- *      The web URL must be:   BASE_URL/uploads/{subdir}/{file}
- *      e.g.  /Smart_Parking/src/public/uploads/profile_images/file_abc.jpg
- *
- *      UploadService stores the relative path as: "profile_images/file_abc.jpg"
- *      So upload_url('profile_images/file_abc.jpg') returns the full web URL.
- */
+
 
 /**
  * Return an absolute URL with BASE_URL prefix.

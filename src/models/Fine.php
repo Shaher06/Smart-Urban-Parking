@@ -1,14 +1,5 @@
 <?php
-/**
- * FINE MODEL
- *
- * PATTERN: Model layer — all fines table DB operations here.
- * PATTERN: Database::getInstance() — Singleton Pattern.
- *
- * FIX: Added missing methods:
- *   - updateStatus()  called by FineService::payFine() and waiveFine()
- *   - getStats()      called by FineService::getFineStats() for admin dashboard
- */
+
 
 require_once BASE_PATH . '/core/Model.php';
 

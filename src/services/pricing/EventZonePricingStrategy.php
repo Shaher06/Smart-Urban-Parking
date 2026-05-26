@@ -1,10 +1,5 @@
 <?php
-/**
- * EVENT ZONE PRICING STRATEGY
- * PATTERN: Strategy (Concrete implementation of PricingStrategy)
- *
- * Applies 2× multiplier during active event zones (e.g. concerts, sports).
- */
+
 
 require_once BASE_PATH . '/interfaces/PricingStrategy.php';
 

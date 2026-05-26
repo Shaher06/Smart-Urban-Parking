@@ -1,21 +1,8 @@
 <?php
 /**
- * APP CONFIGURATION
- *
- * PATTERN: Singleton applied to Config class
- *
- * WHY SINGLETON FOR CONFIG?
- *   Configuration is read many times across the app (services, controllers, views).
- *   Loading it once and caching in a single instance avoids repeated file reads
- *   and guarantees all parts of the app see the same config values.
- *
- * FIX: All define() calls use if (!defined(...)) guards.
- *      BASE_PATH is defined in index.php first — app.php must NOT redefine it.
- */
 
-// ── Core constants ─────────────────────────────────────────────────────────────
-// NOTE: BASE_PATH and BASE_URL are defined in index.php BEFORE this file is loaded.
-// We only define them here as a safety fallback (e.g. if called from CLI/tests).
+ * PATTERN: Singleton applied to Config class
+ */
 
 if (!defined('BASE_PATH')) {
     define('BASE_PATH', dirname(__DIR__));

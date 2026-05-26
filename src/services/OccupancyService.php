@@ -1,13 +1,5 @@
 <?php
-/**
- * OCCUPANCY SERVICE — Real-Time Occupancy Predictor (Simulated)
- *
- * SRS Function: Real-Time Occupancy Predictor
- *
- * In production: uses IoT sensor data + ML model.
- * Here: simulates occupancy prediction using historical booking patterns
- * stored in the reservations table.
- */
+
 
 class OccupancyService
 {

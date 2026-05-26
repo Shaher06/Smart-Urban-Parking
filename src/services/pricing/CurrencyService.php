@@ -1,18 +1,5 @@
 <?php
-/**
- * CURRENCY SERVICE — Multi-Currency Settlement
- *
- * SRS Function: Multi-Currency Settlement (Function #27)
- *
- * Converts amounts between currencies using exchange rates stored in Config.
- * In production: replace $this->rates with a live FX API call (e.g. fixer.io).
- *
- * PATTERN: Used by ServiceFactory::make('currency') — Factory Pattern.
- * PATTERN: Config::getInstance() — Singleton Pattern.
- *
- * FIX: Added require_once for Config class to ensure it is loaded before use.
- *      Previously caused "Class 'Config' not found" when loaded via ServiceFactory.
- */
+
 
 // Ensure Config class is available (loaded via ServiceFactory in a fresh require)
 if (!class_exists('Config')) {

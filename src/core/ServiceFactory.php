@@ -1,24 +1,5 @@
 <?php
-/**
- * SERVICE FACTORY — FACTORY PATTERN
- *
- * PATTERN: Factory
- * WHY:     Controllers should not know HOW to construct services — that is the
- *          factory's job. This decouples object creation from business logic.
- *
- *   Benefits:
- *   1. One central place to change service construction logic.
- *   2. Controllers stay thin — they just call ServiceFactory::make('payment').
- *   3. Easy to swap real implementations with mocks in testing.
- *   4. Services are cached — each service class is instantiated only ONCE
- *      per request (lightweight Flyweight behavior).
- *
- * FIX: CurrencyService path corrected from 'services/CurrencyService.php'
- *      to 'services/pricing/CurrencyService.php' — the file lives in the
- *      pricing/ subdirectory alongside the strategy classes.
- *
- * FIX: Added if (!class_exists('ServiceFactory')) guard.
- */
+
 
 if (!class_exists('ServiceFactory')) {
 
