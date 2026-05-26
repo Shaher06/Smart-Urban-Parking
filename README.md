@@ -1,37 +1,97 @@
 # Smart Urban Parking Management System
 
-A native PHP MVC web application for managing urban parking spaces.
+A modern urban parking management web application built using native PHP and the MVC architectural pattern.  
+The system provides a complete solution for managing parking spaces, reservations, vehicles, payments, pricing, fines, and notifications with role-based access control.
 
-## Requirements
-- PHP 7.4+
-- MySQL 5.7+
-- XAMPP / WAMP / LAMP
+---
 
-## Setup
-1. Copy project to `C:\xampp\htdocs\Smart-Urban-Parking`
-2. Import `database.sql` into MySQL
-3. Edit `src/config/database.php` with your DB credentials
-4. Visit: http://localhost/Smart-Urban-Parking/src/public/
+## Overview
 
-## Default Login Credentials
-All seed accounts use the same bcrypt hash (see `database.sql`). Password is **`password`**.
+Smart Urban Parking is designed to simplify parking management for drivers, parking owners, officers, and administrators through a centralized and scalable platform.
 
-| Role    | Email                  | Password   |
-|---------|------------------------|------------|
-| Admin   | admin@parking.com      | password   |
-| Driver  | driver@parking.com     | password   |
-| Owner   | owner@parking.com      | password   |
-| Officer | officer@parking.com    | password   |
+The project focuses on clean architecture, modular service design, and maintainable backend logic without relying on external PHP frameworks.
 
-After import, the demo driver has `default_vehicle_id` set to the first seeded vehicle for booking convenience.
+---
 
-## Tech Stack
-- Native PHP (no frameworks)
-- MySQL + PDO
-- Bootstrap 5 CDN
-- MVC Architecture
+## Key Features
 
-## Design Patterns Used
-1. MVC Pattern
-2. Strategy Pattern (PaymentService interface)
-3. Service Layer Pattern
+### Authentication & Authorization
+- Secure login system
+- Role-based access control
+- Multiple user roles:
+  - Admin
+  - Driver
+  - Parking Owner
+  - Parking Officer
+
+### Parking Management
+- Add and manage parking spaces
+- Parking availability tracking
+- Slot status monitoring
+
+### Booking System
+- Reserve parking spaces
+- Booking history management
+- Vehicle-linked reservations
+
+### Vehicle Management
+- Register and manage vehicles
+- Default vehicle selection support
+
+### Payment System
+- Modular payment service layer
+- Extensible payment strategy implementation
+
+### Pricing & Fines
+- Dynamic parking pricing
+- Fine calculation and management
+
+### Notifications
+- Driver notifications
+- Booking and payment alerts
+
+### Testing
+- White-box testing for service classes
+- Unit testing for pricing, payments, notifications, and fines
+
+---
+
+# Tech Stack
+
+| Technology | Usage |
+|---|---|
+| PHP 7.4+ | Backend Development |
+| MySQL | Database |
+| PDO | Database Access |
+| Bootstrap 5 | Frontend UI |
+| HTML/CSS | User Interface |
+| Docker | Containerization |
+| MVC Architecture | Project Structure |
+
+---
+
+# Project Structure
+
+```text
+Smart-Urban-Parking/
+│
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── core/
+│   ├── helpers/
+│   ├── interfaces/
+│   ├── models/
+│   ├── public/
+│   ├── services/
+│   └── views/
+│
+├── tests/
+│   └── white-box/
+│
+├── docs/
+│   └── diagrams/
+│
+├── database.sql
+├── Dockerfile
+└── README.md
